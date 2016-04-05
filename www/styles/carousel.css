@@ -1,0 +1,227 @@
+.slide {
+    height: 100px;
+    width: 100px;
+}
+
+.slide-one img {
+    background-color: red;
+}
+
+.slide-two img {
+    background-color: blue;
+}
+
+.slide-three img {
+    background-color: green;
+}
+
+.slide-four img {
+    background-color: orange;
+}
+
+.slide-five img {
+    background-color: yellow;
+}
+
+.carousel {
+    position: relative;
+    left: -20px;
+    width: 100vw;
+}
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+img,
+iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+.button-container {
+    position: absolute;
+    top: calc(50% - 20%);
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+}
+button {
+    display: block;
+}
+
+.prev,
+.next {
+    border: none;
+    background: transparent;
+}
+
+.prev:focus,
+.next:focus {
+    outline: none;
+}
+
+.prev {
+    position: absolute;
+    right: 6px;
+}
+
+.slide {
+    text-align: center;
+    position: relative;
+}
+
+.slide-image-wrapper {
+    height: 0px;
+    padding-top: 32.25%;
+    position: relative;
+}
+
+.info-wrapper {
+    text-align: left;
+}
+
+.next {
+    position: absolute;
+    left: 6px;
+}
+
+.prev::before {
+    left: 0;
+}
+
+.next::before {
+    right: 0;
+}
+
+.prev::before,
+.next::before {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    outline: none;
+    font-size: 4.5rem;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    color: red;
+}
+
+.no-content {
+    display: none;
+}
+
+.mobile-only {
+    width: 100%;
+    max-height: 80vw;
+}
+iframe {
+    max-height: 80vw;
+}
+
+.non-mobile-block,
+.no-content {
+    width: 100%;
+    height: 54vw;
+    margin: auto;
+}
+
+.no-content {
+    line-height: 508px;
+}
+
+.page-editor-mode-body .carousel,
+.swipe {
+    visibility: visible;
+}
+
+.no-content {
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.chill-challenging {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.chill-challenging:before,
+.chill-challenging:after {
+    content: '';
+    position: absolute;
+}
+
+.chill-challenging:before {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+}
+
+.chill-challenging:after {
+    height: 5px;
+    background-color: yellow;
+    top: 0px;
+    left: 0px;
+}
+
+.chill-challenging.barely-challenging:after {
+    width: 75%;
+}
+
+.chill-challenging.very-challenging:after {
+    width: 90%;
+}
+
+.chill-challenging.very-chill:after {
+    width: 20%;
+}
+
+.chill-challenging.pretty-chill:after {
+    width: 40%;
+}
+
+.chill {
+    float: left;
+}
+
+.challenging {
+    float: right;
+}
+
+.chill,
+.challenging {
+    padding: 5px;
+}
+
+.view-map {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 32px;
+    background: black;
+    border: none;
+    color: white;
+}

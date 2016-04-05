@@ -5,11 +5,16 @@ define(function(require) {
     var $ = require("jquery");
 
 
-    $(".territories .slides").each(function(){
+    $(".territories-carousel .slides").each(function(){
+        console.log($(this));
         carousel.create({
             root : $(this),
             hasPagination : false,
-            changeCallback : onSlideChange
+            changeCallback : postSlideChange
         });
     });
+
+    function postSlideChange() {
+        console.log('slide changed');
+    }
 });
