@@ -90,6 +90,7 @@ button {
     height: 0px;
     padding-top: 32.25%;
     position: relative;
+    overflow: hidden;
 }
 
 .info-wrapper {
@@ -202,6 +203,10 @@ iframe {
     width: 40%;
 }
 
+.chill-challenging.most-challenging:after {
+    width: 100%;
+}
+
 .chill {
     float: left;
 }
@@ -224,4 +229,43 @@ iframe {
     background: black;
     border: none;
     color: white;
+    z-index: 1;
+}
+
+.territories-carousel-modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    z-index: 10;
+}
+
+.territories-carousel-modal.open {
+    display: block;
+}
+
+.territories-carousel-modal h2,
+.territories-carousel-modal h3,
+.territories-carousel-modal .close {
+    color: white;
+}
+
+.territories-carousel-modal .close {
+    display: block;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    color: black;
+}
+
+.territories-carousel-modal img {
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
 }
