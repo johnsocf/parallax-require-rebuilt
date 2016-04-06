@@ -3,23 +3,23 @@
     width: 100px;
 }
 
-.slide-one img {
+.slide-one .slide-image-wrapper img {
     background-color: red;
 }
 
-.slide-two img {
+.slide-two .slide-image-wrapper img {
     background-color: blue;
 }
 
-.slide-three img {
+.slide-three .slide-image-wrapper img {
     background-color: green;
 }
 
-.slide-four img {
+.slide-four .slide-image-wrapper img {
     background-color: orange;
 }
 
-.slide-five img {
+.slide-five .slide-image-wrapper img {
     background-color: yellow;
 }
 
@@ -52,11 +52,11 @@ iframe {
     float: left;
     width: 100%;
     position: relative;
-    height: 500px;
+    height: auto;
 }
 .button-container {
     position: absolute;
-    top: calc(50% - 20%);
+    top: calc(29% - 10px);
     width: 100%;
     height: 0px;
     z-index: 1;
@@ -88,9 +88,11 @@ button {
 
 .slide-image-wrapper {
     height: 0px;
-    padding-top: 32.25%;
+    padding-top: 92.5333%;
     position: relative;
     overflow: hidden;
+    float: left;
+    width: 100%;
 }
 
 .info-wrapper {
@@ -129,7 +131,7 @@ button {
 
 .mobile-only {
     width: 100%;
-    max-height: 80vw;
+    /*max-height: 80vw;*/
 }
 iframe {
     max-height: 80vw;
@@ -255,6 +257,10 @@ iframe {
     text-align: center;
 }
 
+.territories-carousel-modal h2 {
+    text-transform: uppercase;
+}
+
 .territories-carousel-modal .close {
     display: block;
     cursor: pointer;
@@ -277,6 +283,10 @@ iframe {
     height: 0px;
     padding-top: 100%;
     position: relative;
+}
+
+.modal-info {
+    display: none;
 }
 
 
