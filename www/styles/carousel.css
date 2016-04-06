@@ -230,6 +230,7 @@ iframe {
     border: none;
     color: white;
     z-index: 1;
+    cursor: pointer;
 }
 
 .territories-carousel-modal {
@@ -251,21 +252,31 @@ iframe {
 .territories-carousel-modal h3,
 .territories-carousel-modal .close {
     color: white;
+    text-align: center;
 }
 
 .territories-carousel-modal .close {
     display: block;
     cursor: pointer;
-    height: 100px;
-    width: 100px;
     background-color: yellow;
     color: black;
 }
 
 .territories-carousel-modal img {
     display: block;
-    position: relative;
-    height: 100px;
-    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     background-color: blue;
 }
+
+.territories-carousel-modal .image-wrapper {
+    height: 0px;
+    padding-top: 100%;
+    position: relative;
+}
+
+
