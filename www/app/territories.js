@@ -81,12 +81,8 @@ define(function(require) {
     }
 
     function buildSlides() {
-        console.log('build slides');
-        console.log(dom.template);
         var template = dom.template.html();
         var slideHtml = mustache.render(template, model);
-        console.log(template);
-        console.log(slideHtml);
         dom.territoriesCarousel.html(slideHtml);
     }
 
@@ -100,9 +96,16 @@ define(function(require) {
         dom.territoriesCarouselSlides.each(function(){
             carousel.create({
                 root : $(this),
-                hasPagination : false
+                hasPagination : false,
+                changeCallback : onSlideUpdate
             });
         });
+    }
+
+    function onSlideUpdate() {
+        var element = $(this);
+
+        element.addClass('selected-slide');
     }
 
     function attachHandlers() {

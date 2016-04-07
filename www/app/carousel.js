@@ -182,7 +182,11 @@ define('carousel', function(require) {
             }
         } else {
             this.currentPage = index;
+            console.log(this.options.activePageClass);
         }
+
+        this.dom.slides.removeClass(this.options.activePageClass);
+        $(this.dom.slides[this.currentPage]).addClass(this.options.activePageClass);
 
         if (this.options.hasPagination && this.dom.slideCount > 1) {
             var newPager = this.dom.pagerListItems.eq(this.currentPage);
