@@ -3,6 +3,8 @@
     width: 100px;
 }
 
+
+
 .slide-one .slide-image-wrapper img {
     background-color: transparent;
 }
@@ -248,10 +250,16 @@ iframe {
     background-color: black;
     display: none;
     z-index: 10;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
 }
 
 .territories-carousel-modal.open {
     display: block;
+}
+
+.territories-carousel-modal.open.fade {
+    opacity: 1;
 }
 
 .territories-carousel-modal h2,
@@ -300,6 +308,15 @@ iframe {
 .slide-image-wrapper.background {
     position: absolute;
     top: 0px;
+    left: 0px;
+}
+
+.slide .slide-image-wrapper .logo {
+    left: 100%;
+    transition: left 300ms ease-in;
+}
+
+.slide.currentPage .slide-image-wrapper .logo {
     left: 0px;
 }
 

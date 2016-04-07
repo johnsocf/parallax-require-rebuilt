@@ -28,8 +28,8 @@
           <file leaf-file-name="territories.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/app/territories.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33262712" vertical-offset="233" max-vertical-offset="1305">
-                  <caret line="85" column="24" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.7457627" vertical-offset="848" max-vertical-offset="1365">
+                  <caret line="139" column="43" selection-start-line="139" selection-start-column="43" selection-end-line="139" selection-end-column="43" />
                   <folding>
                     <element signature="e#186#2963#0" expanded="false" />
                     <element signature="e#234#544#0" expanded="false" />
@@ -94,20 +94,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="carousel.css" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="carousel.css" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/styles/carousel.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.0384617" vertical-offset="3863" max-vertical-offset="4680">
-                  <caret line="268" column="19" selection-start-line="268" selection-start-column="19" selection-end-line="268" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.5868644" vertical-offset="3578" max-vertical-offset="4935">
+                  <caret line="257" column="19" selection-start-line="257" selection-start-column="19" selection-end-line="257" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="carousel.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="carousel.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/app/carousel.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6928105" vertical-offset="2487" max-vertical-offset="3285">
+                <state vertical-scroll-proportion="-12.230769" vertical-offset="2487" max-vertical-offset="3285">
                   <caret line="187" column="66" selection-start-line="187" selection-start-column="66" selection-end-line="187" selection-end-column="66" />
                   <folding />
                 </state>
@@ -138,16 +138,16 @@
         <option value="$PROJECT_DIR$/www/territories-carousel-template.html" />
         <option value="$PROJECT_DIR$/www/app.js" />
         <option value="$PROJECT_DIR$/www/templates/territories-carousel-template.html" />
-        <option value="$PROJECT_DIR$/www/styles/carousel.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/app/territories.js" />
         <option value="$PROJECT_DIR$/www/app/carousel.js" />
+        <option value="$PROJECT_DIR$/www/app/territories.js" />
+        <option value="$PROJECT_DIR$/www/styles/carousel.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2072" />
-    <option name="y" value="570" />
+    <option name="x" value="-2221" />
+    <option name="y" value="564" />
     <option name="width" value="1708" />
     <option name="height" value="827" />
   </component>
@@ -385,7 +385,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2072" y="570" width="1708" height="827" extended-state="0" />
+    <frame x="-2221" y="564" width="1708" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -575,6 +575,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.230769" vertical-offset="2487" max-vertical-offset="3285">
+          <caret line="187" column="66" selection-start-line="187" selection-start-column="66" selection-end-line="187" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/territories-carousel-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="240">
@@ -591,14 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/styles/carousel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0384617" vertical-offset="3863" max-vertical-offset="4680">
-          <caret line="268" column="19" selection-start-line="268" selection-start-column="19" selection-end-line="268" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5" vertical-offset="60" max-vertical-offset="945">
@@ -609,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/app/territories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33262712" vertical-offset="233" max-vertical-offset="1305">
-          <caret line="85" column="24" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.7457627" vertical-offset="848" max-vertical-offset="1365">
+          <caret line="139" column="43" selection-start-line="139" selection-start-column="43" selection-end-line="139" selection-end-column="43" />
           <folding>
             <element signature="e#186#2963#0" expanded="false" />
             <element signature="e#234#544#0" expanded="false" />
@@ -622,10 +622,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/carousel.js">
+    <entry file="file://$PROJECT_DIR$/www/styles/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6928105" vertical-offset="2487" max-vertical-offset="3285">
-          <caret line="187" column="66" selection-start-line="187" selection-start-column="66" selection-end-line="187" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.5868644" vertical-offset="3578" max-vertical-offset="4935">
+          <caret line="257" column="19" selection-start-line="257" selection-start-column="19" selection-end-line="257" selection-end-column="19" />
           <folding />
         </state>
       </provider>

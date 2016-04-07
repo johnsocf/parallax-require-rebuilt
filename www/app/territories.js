@@ -130,10 +130,14 @@ define(function(require) {
 
     function openModal() {
         dom.territoriesCarouselModal.addClass('open');
+        setTimeout(function(){
+            dom.territoriesCarouselModal.addClass('fade');
+        }, 10);
     }
 
     function closeModal() {
         dom.territoriesCarouselModal.removeClass('open');
+        dom.territoriesCarouselModal.removeClass('fade');
     }
 
     init();
