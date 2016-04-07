@@ -3,29 +3,104 @@ define(function(require) {
 
     var carousel = require("carousel");
     var $ = require("jquery"),
-        dom;
+        mustache = require("mustache"),
+        dom,
+        model = {
+            'territories' : [
+                {
+                    name:'cirque',
+                    territoryBanner: "images/logos/cirque-logo.png",
+                    territoryImage: "images/territories/cirque-territory.png",
+                    modalMap: "images/modal-maps/cirque-map.png",
+                    challengeLevel: "100"
+                },
+                {
+                    name:'eagle',
+                    territoryBanner: "images/logos/eagle-wind-logo.png",
+                    territoryImage: "images/territories/eagle-wind-territory.png",
+                    modalMap: "images/modal-maps/eagle-map.png",
+                    challengeLevel: "84"
+                },
+                {
+                    name:'mary jane',
+                    territoryBanner: "images/logos/mary-jane-logo.png",
+                    territoryImage: "images/territories/mary-jane-territory.png",
+                    modalMap: "images/modal-maps/mary-jane-map.png",
+                    challengeLevel: "70"
+                },
+                {
+                    name:'terrain',
+                    territoryBanner: "images/logos/terrain-park-logo.png",
+                    territoryImage: "images/territories/terrain-park-territory.png",
+                    modalMap: "images/modal-maps/terrain-map.png",
+                    challengeLevel: "56"
+                },
+                {
+                    name:'parsenn bowl',
+                    territoryBanner: "images/logos/parsenn-bowl-logo.png",
+                    territoryImage: "images/territories/parsenn-bowl-territory.png",
+                    modalMap: "images/modal-maps/parsenn-bowl-map.png",
+                    challengeLevel: "42"
+                },
+                {
+                    name:'vasquez',
+                    territoryBanner: "images/logos/vasquez-ridge-logo.png",
+                    territoryImage: "images/territories/vasquez-ridge-territory.png",
+                    modalMap: "images/modal-maps/vasquez-map.png",
+                    challengeLevel: "28"
+                },
+                {
+                    name:'winter park',
+                    territoryBanner: "images/logos/winter-park-logo.png",
+                    territoryImage: "images/territories/winter-park-territory.png",
+                    modalMap: "images/modal-maps/winter-park-map.png",
+                    challengeLevel: "14"
+                },
+                {
+                    name:'start',
+                    territoryBanner: "images/logos/territories-logo.png",
+                    territoryImage: "images/territories/territories-region.png",
+                    modalMap: "images/modal-maps/all-territories-map.png",
+                    challengeLevel: "0"
+                }
+            ]
+        };
 
     function init() {
         cacheDom();
+        buildSlides();
+        cacheDelegatedDom();
         buildCarousel();
         attachHandlers();
     }
 
     function cacheDom() {
         dom = {};
-        dom.viewMap = $('.view-map');
         dom.territoriesCarousel = $(".territories-carousel");
+        dom.template = $("#territories");
+    }
+
+    function buildSlides() {
+        console.log('build slides');
+        console.log(dom.template);
+        var template = dom.template.html();
+        var slideHtml = mustache.render(template, model);
+        console.log(template);
+        console.log(slideHtml);
+        dom.territoriesCarousel.html(slideHtml);
+    }
+
+    function cacheDelegatedDom() {
+        dom.viewMap = $('.view-map');
         dom.territoriesCarouselSlides = dom.territoriesCarousel.find('.slides');
         dom.territoriesCarouselModal = $('.territories-carousel-modal');
     }
 
     function buildCarousel() {
         dom.territoriesCarouselSlides.each(function(){
-            console.log($(this));
             carousel.create({
                 root : $(this),
-                hasPagination : false,
-                changeCallback : postSlideChange
+                hasPagination : false
             });
         });
     }
@@ -35,25 +110,15 @@ define(function(require) {
     }
 
     function attachDelegatedHandlers() {
-        console.log('attach delegated handlers');
         dom.modalCloseButton = dom.territoriesCarouselModal.find('.close');
 
-        console.log(dom.modalCloseButton);
-
         dom.modalCloseButton.on('click', closeModal);
-    }
-
-    function postSlideChange() {
-        console.log('slide changed');
     }
 
     function queModal() {
         var element = $(this),
             slide = element.parents('.slide'),
             modalInfo = slide.find('.modal-info').html();
-
-        console.log(modalInfo);
-        console.log(dom.territoriesCarouselModal);
 
         dom.territoriesCarouselModal.html(modalInfo);
         attachDelegatedHandlers();
@@ -65,7 +130,6 @@ define(function(require) {
     }
 
     function closeModal() {
-        console.log('close modal');
         dom.territoriesCarouselModal.removeClass('open');
     }
 

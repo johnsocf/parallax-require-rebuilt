@@ -12,7 +12,8 @@ requirejs.config({
         territoriesCarousel: '../app/territories',
         global: '../global',
         helpers: '../helpers',
-        swipe: 'swipe'
+        swipe: 'swipe',
+        mustache: 'mustache'
     }
 });
 
@@ -25,3 +26,4 @@ requirejs(['swipe']);
 requirejs(['../global']);
 requirejs(['../helpers']);
 requirejs(['jquery']);
+requirejs(['mustache']);

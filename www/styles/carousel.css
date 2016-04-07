@@ -4,24 +4,28 @@
 }
 
 .slide-one .slide-image-wrapper img {
-    background-color: red;
+    background-color: transparent;
 }
 
-.slide-two .slide-image-wrapper img {
-    background-color: blue;
-}
+/*.slide-one .slide-image-wrapper img {*/
+    /*background-color: red;*/
+/*}*/
 
-.slide-three .slide-image-wrapper img {
-    background-color: green;
-}
+/*.slide-two .slide-image-wrapper img {*/
+    /*background-color: blue;*/
+/*}*/
 
-.slide-four .slide-image-wrapper img {
-    background-color: orange;
-}
+/*.slide-three .slide-image-wrapper img {*/
+    /*background-color: green;*/
+/*}*/
 
-.slide-five .slide-image-wrapper img {
-    background-color: yellow;
-}
+/*.slide-four .slide-image-wrapper img {*/
+    /*background-color: orange;*/
+/*}*/
+
+/*.slide-five .slide-image-wrapper img {*/
+    /*background-color: yellow;*/
+/*}*/
 
 .carousel {
     position: relative;
@@ -268,7 +272,8 @@ iframe {
     color: black;
 }
 
-.territories-carousel-modal img {
+.territories-carousel-modal .territory-modal-map,
+.territories-carousel-modal .background-modal-map, {
     display: block;
     position: absolute;
     top: 0px;
@@ -276,7 +281,10 @@ iframe {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    background-color: blue;
+}
+
+.territories-carousel-modal .territory-modal-map {
+    z-index: 1;
 }
 
 .territories-carousel-modal .image-wrapper {
@@ -287,6 +295,12 @@ iframe {
 
 .modal-info {
     display: none;
+}
+
+.slide-image-wrapper.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 

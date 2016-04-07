@@ -16,15 +16,17 @@
                         </div>
                         <div class="slide-image-wrapper">
                             <button class="view-map">View Map +</button>
-                            <img src="">
+                            <img class="logo" src="../images/logos/cirque-logo.png">
+                            <img class="territory" src="../images/territories/cirque-territory.png">
                         </div>
                         <div class="info-wrapper">
                             <h1>territory one</h1>
                             <h2>tagline.  six terrain parks.  one super pipe.  endless creativity.</h2>
                             <p>Aenean auctor eleifend lorem, volutpat pretium ex pellentesque sed. Etiam in rhoncus eros. Aenean cursus mi et justo efficitur tincidunt.</p>
-                            <button type="submit" class="default submit reverse">
-                                <span class="background" style="left: auto;"></span>
-                                <span class="text"">Sign up </span></button>
+                            <button type="submit" class="default submit">
+                                <span class="background"></span>
+                                <span class="text">Sign up</span>
+                            </button>
                         </div>
                         <div class="modal-info">
                             <h2>The Seven Territories</h2>
@@ -50,6 +52,14 @@
                             <h2>tagline.  six terrain parks.  one super pipe.  endless creativity.</h2>
                             <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla non sodales orci. Praesent condimentum lectus ac interdum lobortis.</p>
                         </div>
+                        <div class="modal-info">
+                            <h2>The Sssslide two modal</h2>
+                            <h3>Dakota's Ledge</h3>
+                            <span class="close">close</span>
+                            <div class="image-wrapper">
+                                <img src="">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="slide slide-three">
@@ -65,6 +75,14 @@
                             <h1>territory three</h1>
                             <h2>tagline.  six terrain parks.  one super pipe.  endless creativity.</h2>
                             <p>Praesent consectetur nulla mi, sed aliquet eros pharetra quis. Donec non ligula vel quam pretium maximus in at lorem.</p>
+                        </div>
+                        <div class="modal-info">
+                            <h2>SLIDE three</h2>
+                            <h3>This route ain't chill, folks</h3>
+                            <span class="close">close</span>
+                            <div class="image-wrapper">
+                                <img src="">
+                            </div>
                         </div>
                     </div>
 
@@ -82,6 +100,14 @@
                             <h2>tagline.  six terrain parks.  one super pipe.  endless creativity.</h2>
                             <p>Cras commodo in arcu vitae laoreet. Nulla gravida metus eu est feugiat blandit. Curabitur imperdiet dolor et dolor vestibulum dictum.</p>
                         </div>
+                        <div class="modal-info">
+                            <h2>SLIDE four</h2>
+                            <h3>Some deets on this one</h3>
+                            <span class="close">close</span>
+                            <div class="image-wrapper">
+                                <img src="">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="slide slide-five">
@@ -98,6 +124,14 @@
                             <h2>so challenging</h2>
                             <p>Cras commodo in arcu vitae laoreet. Nulla gravida metus eu est feugiat blandit. Curabitur imperdiet dolor et dolor vestibulum dictum.</p>
                         </div>
+                        <div class="modal-info">
+                            <h2>SLIDE five-a-roo</h2>
+                            <h3>next slide please</h3>
+                            <span class="close">close</span>
+                            <div class="image-wrapper">
+                                <img src="">
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -108,4 +142,49 @@
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     </body>
+
+    <script type="text/template" id="territories">
+        <div class="chill-challenging data-level="0">
+            <p class="chill">chill</p>
+            <p class="challenging">challenging</p>
+        </div>
+        <div class="slide-image-wrapper background">
+            <img src="images/all-territories-background-map.jpg">
+        </div>
+        <div class="slides swipe mobile-only">
+            <div class="swipe-wrap">
+                {{#territories}}
+                <div class="slide slide-one">
+                    <div class="slide-image-wrapper">
+                        <button class="view-map">View Map +</button>
+                        <img class="logo" src="{{territoryBanner}}">
+                        <img class="territory" src="{{territoryImage}}">
+                    </div>
+                    <div class="info-wrapper">
+                        <h1>{{name}}</h1>
+                        <h2>tagline.  six terrain parks.  one super pipe.  endless creativity.</h2>
+                        <p>Aenean auctor eleifend lorem, volutpat pretium ex pellentesque sed. Etiam in rhoncus eros. Aenean cursus mi et justo efficitur tincidunt.</p>
+                        <button type="submit" class="default submit">
+                            <span class="background"></span>
+                            <span class="text">Sign up</span>
+                        </button>
+                    </div>
+                    <div class="modal-info">
+                        <h2>The Seven Territories</h2>
+                        <h3>{{name}}</h3>
+                        <span class="close">close</span>
+                        <div class="image-wrapper">
+                            <img class="territory-modal-map" src="{{modalMap}}">
+                            <img class="background-modal-map" src="images/modal-maps/overlay-map.jpg">
+                        </div>
+                    </div>
+                </div>
+                {{/territories}}
+            </div>
+        </div>
+        <div class="territories-carousel-modal">
+            <p>welcome to my modal</p>
+        </div>
+
+    </script>
 </html>
