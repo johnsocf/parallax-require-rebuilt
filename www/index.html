@@ -11,17 +11,23 @@
     </body>
 
     <script type="text/template" id="territories">
-        <div class="chill-challenging data-level="0">
-            <p class="chill">chill</p>
-            <p class="challenging">challenging</p>
-        </div>
+        <ul class="chill-challenging data-level="0">
+            <li class="chill">
+                <span class="chill-level"></span>
+                <p>chill</p>
+            </li>
+            <li class="challenging">
+                <span class="challenge-level"></span>
+                <p>challenging</p>
+            </li>
+        </ul>
         <div class="slide-image-wrapper background">
             <img src="images/all-territories-background-map.jpg">
         </div>
         <div class="slides swipe mobile-only">
             <div class="swipe-wrap">
                 {{#territories}}
-                <div class="slide">
+                <div class="slide" data-level="{{challengeLevel}}">
                     <div class="slide-image-wrapper">
                         <button class="view-map">View Map +</button>
                         <img class="territory" src="{{territoryImage}}">

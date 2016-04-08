@@ -171,16 +171,25 @@ iframe {
     width: 100%;
     position: absolute;
     top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
     z-index: 2;
 }
 
-.chill-challenging:before,
-.chill-challenging:after {
+.chill-challenging .chill,
+.chill-challenging .challenging {
+    list-style: none;
+}
+
+.chill-challenging .chill-level,
+.chill-challenging .challenge-level {
     content: '';
     position: absolute;
 }
 
-.chill-challenging:before {
+.chill-challenging .challenge-level {
     height: 5px;
     width: 100%;
     background-color: black;
@@ -188,11 +197,15 @@ iframe {
     left: 0px;
 }
 
-.chill-challenging:after {
+.chill-challenging .chill .chill-level {
     height: 5px;
     background-color: yellow;
+    position: absolute;
     top: 0px;
     left: 0px;
+    width: 0%;
+    z-index: 1;
+    transition: width 300ms ease-in;
 }
 
 .chill-challenging.barely-challenging:after {

@@ -90,6 +90,8 @@ define(function(require) {
         dom.viewMap = $('.view-map');
         dom.territoriesCarouselSlides = dom.territoriesCarousel.find('.slides');
         dom.territoriesCarouselModal = $('.territories-carousel-modal');
+        dom.challengeLevel = $('.chill-challenging');
+        dom.challengeLevelChill = dom.challengeLevel.find('.chill-level');
     }
 
     function buildCarousel() {
@@ -103,9 +105,8 @@ define(function(require) {
     }
 
     function onSlideUpdate() {
-        var element = $(this);
-
-        element.addClass('selected-slide');
+        var percentWidth = $('.currentPage').data('level') + "%";
+        dom.challengeLevelChill.css('width', percentWidth);
     }
 
     function attachHandlers() {
