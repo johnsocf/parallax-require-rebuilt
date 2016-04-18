@@ -140,7 +140,7 @@ define(function(require){
             layerDepth = activeNow.data('depth'),
                 realmGreater = z > layerDepth,
                 currentLayerDepthActive = -z ;
-                condensedLayerDepth = (-z * 2.5);
+                condensedLayerDepth = z - (z * 2.5);
 
             condensedLayer.css({
                 '-webkit-transform': 'translate3d(0, 0px, ' + z + 'px)',

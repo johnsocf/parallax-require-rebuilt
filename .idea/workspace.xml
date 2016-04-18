@@ -20,7 +20,7 @@
     <favorites_list name="create-template-master" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.16967872">
+    <splitter split-orientation="horizontal" split-proportion="0.1">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="territories.js" pinned="false" current-in-tab="false">
@@ -80,11 +80,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8140496">
-                  <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+                <state vertical-scroll-proportion="-6.8431373">
+                  <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
                   <folding>
                     <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -103,21 +103,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="within.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="within.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/app/within.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.9259257">
-                  <caret line="71" column="66" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
+                <state vertical-scroll-proportion="0.5098425">
+                  <caret line="142" column="43" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
                   <folding>
                     <element signature="e#736#797#0" expanded="false" />
                     <element signature="e#875#970#0" expanded="false" />
                     <element signature="e#2442#3303#0" expanded="false" />
                     <element signature="e#3339#3383#0" expanded="false" />
-                    <element signature="e#5453#5631#0" expanded="false" />
-                    <element signature="e#5933#6937#0" expanded="false" />
-                    <element signature="e#6984#7619#0" expanded="false" />
-                    <element signature="e#7653#7845#0" expanded="false" />
-                    <element signature="e#7895#8237#0" expanded="false" />
+                    <element signature="e#5456#5634#0" expanded="false" />
+                    <element signature="e#5936#6940#0" expanded="false" />
+                    <element signature="e#6987#7622#0" expanded="false" />
+                    <element signature="e#7656#7848#0" expanded="false" />
+                    <element signature="e#7898#8240#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -126,8 +126,8 @@
           <file leaf-file-name="parallax.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/styles/parallax.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.254902">
-                  <caret line="397" column="31" selection-start-line="397" selection-start-column="31" selection-end-line="397" selection-end-column="31" />
+                <state vertical-scroll-proportion="-4.627451">
+                  <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -160,9 +160,9 @@
         <option value="$PROJECT_DIR$/www/app.js" />
         <option value="$PROJECT_DIR$/www/styles/reset.css" />
         <option value="$PROJECT_DIR$/www/app/utils.js" />
-        <option value="$PROJECT_DIR$/www/app/within.js" />
-        <option value="$PROJECT_DIR$/www/styles/parallax.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/styles/parallax.css" />
+        <option value="$PROJECT_DIR$/www/app/within.js" />
       </list>
     </option>
   </component>
@@ -173,7 +173,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="39" />
-    <option name="y" value="62" />
+    <option name="y" value="83" />
     <option name="width" value="1211" />
     <option name="height" value="700" />
   </component>
@@ -372,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="62" width="1211" height="700" extended-state="0" />
+    <frame x="39" y="83" width="1211" height="700" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17753923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -759,36 +759,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/within.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9259257">
-          <caret line="71" column="66" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
-          <folding>
-            <element signature="e#736#797#0" expanded="false" />
-            <element signature="e#875#970#0" expanded="false" />
-            <element signature="e#2442#3303#0" expanded="false" />
-            <element signature="e#3339#3383#0" expanded="false" />
-            <element signature="e#5453#5631#0" expanded="false" />
-            <element signature="e#5933#6937#0" expanded="false" />
-            <element signature="e#6984#7619#0" expanded="false" />
-            <element signature="e#7653#7845#0" expanded="false" />
-            <element signature="e#7895#8237#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/styles/parallax.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.254902">
-          <caret line="397" column="31" selection-start-line="397" selection-start-column="31" selection-end-line="397" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8140496">
-          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+        <state vertical-scroll-proportion="-6.8431373">
+          <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -802,6 +776,32 @@
             <element signature="n#div#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#13;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/styles/parallax.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.627451">
+          <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/within.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5098425">
+          <caret line="142" column="43" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
+          <folding>
+            <element signature="e#736#797#0" expanded="false" />
+            <element signature="e#875#970#0" expanded="false" />
+            <element signature="e#2442#3303#0" expanded="false" />
+            <element signature="e#3339#3383#0" expanded="false" />
+            <element signature="e#5456#5634#0" expanded="false" />
+            <element signature="e#5936#6940#0" expanded="false" />
+            <element signature="e#6987#7622#0" expanded="false" />
+            <element signature="e#7656#7848#0" expanded="false" />
+            <element signature="e#7898#8240#0" expanded="false" />
           </folding>
         </state>
       </provider>
