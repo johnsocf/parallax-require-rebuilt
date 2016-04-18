@@ -9,9 +9,12 @@ requirejs.config({
         app: '../app',
         jquery: 'jquery-2.1.1.min',
         carousel: '../app/carousel',
+        utils: '../app/utils',
         territoriesCarousel: '../app/territories',
+        within: '../app/within',
         global: '../global',
         helpers: '../helpers',
+        underscore: 'underscore-min',
         swipe: 'swipe',
         mustache: 'mustache'
     }
@@ -22,8 +25,11 @@ requirejs.config({
 requirejs(['app/main']);
 requirejs(['app/carousel']);
 requirejs(['app/territories']);
+requirejs(['app/within']);
 requirejs(['swipe']);
+requirejs(['underscore-min']);
 requirejs(['../global']);
 requirejs(['../helpers']);
 requirejs(['jquery']);
+requirejs(['app/utils']);
 requirejs(['mustache']);
