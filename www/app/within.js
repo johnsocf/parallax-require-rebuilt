@@ -113,7 +113,9 @@ define(function(require){
 
         function playAudio(layer) {
             // get audio/ play.
-
+            var layerIndex = $('.layer').index(layer);
+            var dataLayer = layer.data('audio');
+            var correspondingAudioObject = audio[layerIndex];
         }
 
         function condensedReset() {
@@ -140,7 +142,11 @@ define(function(require){
             layerDepth = activeNow.data('depth'),
                 realmGreater = z > layerDepth,
                 currentLayerDepthActive = -z ;
-                condensedLayerDepth = z - (z * 2.5);
+                condensedLayerDepth = -z - (z * 2.5);
+
+            if (condensedLayer.is('.forwards')) {
+                condensedLayerDepth = -z + (z * 1.5);
+            }
 
             condensedLayer.css({
                 '-webkit-transform': 'translate3d(0, 0px, ' + z + 'px)',
