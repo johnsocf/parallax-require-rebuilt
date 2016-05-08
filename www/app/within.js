@@ -115,7 +115,9 @@ define(function(require){
             // get audio/ play.
             var layerIndex = $('.layer').index(layer);
             var dataLayer = layer.data('audio');
-            var correspondingAudioObject = audio[layerIndex];
+            var correspondingAudioObject = audio[layerIndex]["layerId"];
+
+            correspondingAudioObject.play();
         }
 
         function condensedReset() {
@@ -254,6 +256,11 @@ define(function(require){
             var audioPath = layer.data('audio'),
                 layerId = layer.attr('id'),
                 newAudio = new Audio(audioPath);
+                //newAudio.src = audioPath;
+                //setTimeout(function() {
+                //    newAudio.play();
+                //}, 0);
+
             audio.push({
                 layerId : newAudio
             })
