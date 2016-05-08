@@ -100,6 +100,7 @@ define(function(require){
 
                 hideImages();
                 showActiveImages(layer);
+                stopAudio();
                 playAudio(layer);
 
                 nodes.menu.find('.' + classes.activeMenu).removeClass(classes.activeMenu);
@@ -109,6 +110,13 @@ define(function(require){
                 current.menu = position;
             }
 
+        }
+
+        function stopAudio() {
+            audio.forEach(function(value, index){
+                var element = value["layerId"];
+                element.pause();
+            });
         }
 
         function playAudio(layer) {
